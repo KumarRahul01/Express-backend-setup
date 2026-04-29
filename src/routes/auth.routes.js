@@ -13,8 +13,11 @@ import {
 } from "../controllers/auth.controller.js";
 import { validate } from "../middlewares/validator.middleware.js";
 import {
+  userChangeCurrentPasswordValidator,
+  userForgotPasswordValidator,
   userLoginValidator,
   userRegisterValidator,
+  userResetForgotPasswordValidator,
 } from "../validators/index.js";
 import { verifyJWT } from "../middlewares/auth.middleware.js";
 
